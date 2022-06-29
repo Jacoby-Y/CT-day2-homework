@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* { margin: 0; padding: 0; }
+
+body {
+	height: 100vh;
+	font-family: "Roboto";
+	display: grid;
+}
+
+
+/* #region | Nav && Header */
+nav {
+	background-color: black;
+	color: white;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+	padding: 1rem 7rem;
+}
+header {
+	background-image: url("./images/theater-image-background.png");
+	background-repeat: no-repeat;
+	height: 50rem;
+	width: 100%;
+	background-size: 100% 100%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	font-size: 2.5rem;
+	color: white;
+}
+/* #endregion */
+
+/* #region | Main && Event-Wrapper */
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: max-content repeat(4, 10rem);
+	justify-items: center;
+	width: max-content;
+	justify-self: center;
+	padding: 7rem;
+}
+main #sect-title {
+	font-size: 1.5rem;
+	background-color: #eee;
+	width: 100%;
+	padding: 0.5rem;
+	padding-left: 4rem;
+	border: 1px solid black;
+}
+main .event-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+main .event-wrapper img {
+	width: 70%;
+	height: 70%;
+	object-fit: contain;
+}
+main .event-wrapper button {
+	background-color: #ebb625;
+	color: white;
+	border: 1px solid #333;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+.event-wrapper .event-info p {
+	padding-top: 1rem;
+}
+/* #endregion */
+
+/* #region | Nav && Header */
+footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	padding: 5rem 10rem;
+	background-color: black;
+	color: white;
+}
+footer img {
+	width: 80%;
+}
+.footer-text h2 {
+	padding: 1rem;
+}
+.footer-text p {
+	padding: 0 0 1rem 1rem;
+}
+/* #endregion */
